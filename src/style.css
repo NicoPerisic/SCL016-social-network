@@ -3,7 +3,10 @@ body{
     background-color: rgb(65, 64, 77);
 }
 
-#home{
+/*Primera página Home*/
+
+#fondohome{
+    font-family: 'Ubuntu', sans-serif;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -13,11 +16,6 @@ body{
     height: 1000px;
     background-color: rgb(26, 24, 36);
     background-image: url(images/Fondo.png);
-}
-
-#nombres{
-    font-size: 12px;
-    color: rgb(255, 255, 255);
 }
 
 .portada{
@@ -30,33 +28,18 @@ body{
     margin-bottom: 40px;
 }
 
-.centrar{
+.elementosInicio{
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-.botones {
     font-family: 'Ubuntu', sans-serif;
-    width: 300px;
-    height: 50px;
-    margin: 15px;
+    color: #ffffff;
     font-size: 20px;
-    font-weight: bold;
-    background: #ffffff;
-    border-radius: 30px; 
-    opacity: 80%;
 }
 
-.botones:hover {
-    background-color: #ffffff;
-    opacity: 0.6;
-}
-
-.botonLogin{
+.btnLogin{
     font-family: 'Ubuntu', sans-serif;
-    width: 100vw;
-    max-width: 145px;
+    width: 150px;
     height: 48px;
     margin: 20px;
     font-size: 20px;
@@ -66,17 +49,52 @@ body{
     opacity: 80%;
 }
 
-.botonLogin:hover {
-    background-color: #ffffff;
+.btnLogin:hover {
     opacity: 0.6;
 }
 
+.inputHome{
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    font-weight: bold;
+    background: #ffffff;
+    border-radius: 50px; 
+    opacity: 80%;
+}
+
+.inputHome:hover {
+    opacity: 0.6;
+}
+
+.google{
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.elementosGoogle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+#textoUno{
+    margin-bottom: 5px;
+}
+
+#aqui{
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 /*Footer*/
 
 footer{
     position:absolute;
-    margin-top: 800px;
+    margin-top: 850px;
 }
 
 .centrarRedes{
@@ -91,18 +109,39 @@ footer{
     margin-left: 10px;
     margin-right: 10px;
     opacity: 80%;
+    text-decoration: none;  
 }
   
 .fab:hover {
     opacity: 0.6;
 }
   
-.google{
-    text-decoration: none;
-    margin-top: 30px;
+#nombres{
+    font-size: 12px;
+    color: rgb(255, 255, 255);
 }
 
-.elementosHome{
+/*Página Registro General*/
+
+#fondoRegistro{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+    height: 1000px;
+    background-color: rgb(26, 24, 36);
+    background-image: url(images/Fondo.png);
+}
+
+#textoTres{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.elementosRegistro{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,6 +150,44 @@ footer{
     font-size: 18px;
 }
 
-#textoUno{
-    margin-bottom: 5px;
+.inputRegistro{
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100vw;
+    max-width: 250px;
+    height: 40px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #ffffff;
+    border-radius: 50px; 
+    opacity: 80%;
 }
+
+.btnConfirmar{
+    font-family: 'Ubuntu', sans-serif;
+    width: 200px;
+    height: 48px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #ffffff;
+    border-radius: 50px; 
+    opacity: 80%;
+}
+
+.btnConfirmar:hover {
+    opacity: 0.6;
+}
+
+
+
+/*Configuración none-block
+
+#home {
+    display: block;
+  }
+
+#registro {
+    display: none;
+  }*/
