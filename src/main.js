@@ -14,6 +14,7 @@ function nextPageOne() {
 }*/
 
 
+
 //Primera Página - HOME 
 
 const showHomeHtmlElements = () => {
@@ -29,13 +30,14 @@ const showHomeHtmlElements = () => {
    contenedorDiv.appendChild(divInicio);
    divInicio.innerHTML = 
    '<input class=inputHome>Correo</input>'+
-   '<input class=inputHome>Correo</input>'+
+   '<input type="password" placeholder="Ingresa tu contraseña" class=inputHome>Contraseña</input>'+
    '<button class="btnLogin">Login</button>'
+
 
    let divOne = document.createElement('div');
    divOne.classList.add('elementosGoogle');
    contenedorDiv.appendChild(divOne);
-   divOne.innerHTML = '<div id="textoUno">¿No tienes cuenta? Registrate <span id="aqui">aquí</span></div>' +
+   divOne.innerHTML = '<div id="textoUno">¿No tienes cuenta? Registrate <a> <span id="aqui">aquí</span></a> </div>' +
    '<div id="textoDos"> O ingresa con tu cuerta de Google</div>'+
    '<a class="fab fa-google fa-3x google" href=""></a>'
 
@@ -58,12 +60,21 @@ const showRegistroHtmlElements = () => {
    divReg.classList.add('elementosRegistro');
    contenedorElementos.appendChild(divReg);
    divReg.innerHTML = 
-   '<input class=inputRegistro>Nombre</input>'+
-   '<input class=inputRegistro>Email</input>'+
-   '<input class=inputRegistro>Contraseña</input>'+
-   '<input class=inputRegistro>Confirmar Contraseña</input>'+
+   '<input placeholder="ingresa tu nombre "class=inputRegistro>Nombre</input>'+
+   '<input type="email" placeholder="Ingresa un correo valido" class=inputRegistro>Email</input>'+
+   '<input type="password" placeholder="Ingresa una contraseña" class=inputRegistro>Contraseña</input>'+
+   '<input type="password" placeholder="Confirma tu contraseña" class=inputRegistro>Confirmar Contraseña</input>'+
    '<button class="btnConfirmar">CONFIRMAR</button>'
 
 }
 
 showRegistroHtmlElements();
+
+
+let btnAqui = document.getElementById("aqui")
+btnAqui.addEventListener("click", pageRegistro)
+
+function pageRegistro() {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("registro").style.display = "block";
+}
