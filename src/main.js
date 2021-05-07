@@ -31,7 +31,7 @@ const showHomeHtmlElements = () => {
    divInicio.innerHTML = 
    '<input class=inputHome>Correo</input>'+
    '<input type="password" placeholder="Ingresa tu contraseña" class=inputHome>Contraseña</input>'+
-   '<button class="btnLogin">Login</button>'
+   '<button id= "login" class="btnLogin">Login</button>'
 
 
    let divOne = document.createElement('div');
@@ -71,6 +71,9 @@ const showRegistroHtmlElements = () => {
 showRegistroHtmlElements();
 
 
+
+
+
 let btnAqui = document.getElementById("aqui")
 btnAqui.addEventListener("click", pageRegistro)
 
@@ -78,3 +81,4 @@ function pageRegistro() {
   document.getElementById("home").style.display = "none";
   document.getElementById("registro").style.display = "block";
 }
+
