@@ -96,16 +96,3 @@ function pageRegistro() {
   document.getElementById("registro").style.display = "block";
 }
   
-
-/*
-
-const singupForm = document.getElementById("btnConfirmar");
-singupForm.addEventListener('submit', (e) => {
-
-const singupEmail = document.getElementById(email).value;
-const singupPassword = document.getElementById(password).value;
-const singupConfPassword = document.getElementById(confpassword).value;
-
-console.log(singupEmail, singupPassword, singupConfPassword)
-
-}) */
