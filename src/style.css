@@ -1,3 +1,4 @@
+
 body{
     font-family: 'Ubuntu', sans-serif;
     background-color: rgb(65, 64, 77);
@@ -24,8 +25,8 @@ body{
     padding-top: 10px;
     width: 550px;
     height: 150px;
-    margin-top: 80px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 30-px;
 }
 
 .contenedorHome{
@@ -42,7 +43,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
     width: 150px;
     height: 48px;
-    margin: 20px;
+    margin: 10px;
     font-size: 20px;
     font-weight: bold;
     background: #ffffff;
@@ -55,6 +56,7 @@ body{
 }
 
 .inputHome{
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
     width: 250px;
     height: 40px;
@@ -63,6 +65,7 @@ body{
     border-radius: 50px; 
     opacity: 80%;
     margin: 15px;
+    font-size: 18px;
 }
 
 .inputHome:hover {
@@ -71,7 +74,6 @@ body{
 
 .google{
     text-decoration: none;
-    margin-top: 30px;
 }
 
 .elementosGoogle{
@@ -84,25 +86,43 @@ body{
 }
 
 #textoUno{
-    margin-bottom: 5px;
+    font-size: 20px;
 }
 
 #aqui{
     font-weight: bold;
     text-decoration: underline;
+    cursor: pointer;
 }
+
+#aqui:hover {
+    opacity: 0.6;
+}
+
+#aquiTwo{
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#aquiTwo:hover {
+    opacity: 0.6;
+}
+
+#textoTres{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
 
 /*Footer*/
 
-footer{
-    position:absolute;
-    margin-top: 850px;
-}
-
-.centrarRedes{
+.centrarRedes {
     display: flex;
     justify-content: center;
-  }
+}
   
 .fab {
     color: #ffffff ;
@@ -119,8 +139,14 @@ footer{
 }
   
 #nombres{
+    text-align: center;
     font-size: 12px;
     color: rgb(255, 255, 255);
+
+}
+
+.divFooterTwo{
+    margin-top: 100px;
 }
 
 /*Página Registro General*/
@@ -137,9 +163,9 @@ footer{
     background-image: url(images/Fondo.png);
 }
 
-#textoTres{
+#textoDos{
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 30px;
 }
 
@@ -155,7 +181,6 @@ footer{
 
 .inputRegistro{
     text-align: center;
-    display: flex;
     font-family: 'Ubuntu', sans-serif;
     width: 100vw;
     max-width: 250px;
@@ -165,15 +190,19 @@ footer{
     background: #ffffff;
     border-radius: 50px; 
     opacity: 80%;
-    margin-top: 5px;
+    margin: 20px;
 }
 
+
 #btnConfirmar{
+    margin-right: 30px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
     font-family: 'Ubuntu', sans-serif;
-    width: 200px;
-    height: 48px;
-    margin: 20px;
-    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
     font-weight: bold;
     background: #ffffff;
     border-radius: 50px; 
@@ -184,6 +213,114 @@ footer{
     opacity: 0.6;
 }
 
+#btnCancelar{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #ffffff;
+    border-radius: 50px; 
+    opacity: 80%;
+}
+
+#btnCancelar:hover {
+    opacity: 0.6;
+}
 
 
+/*Tercera página - MURO*/
+
+#fondoMuro{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+    height: 1000px;
+    background-color: rgb(26, 24, 36);
+    background-image: url(images/Fondo.png);
+}
+
+.portadaMuro{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 350px;
+    height: 100px;
+}
+
+.contenedorMuro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.centrarRedesOne{
+    margin-top: 700px;
+    display: flex;
+    justify-content: center;
+  }
+
+/*Barra de Navegación*/
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: #ffffff;
+}
+
+li{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.fas {
+    color: #ffffff ;
+    border: transparent;
+    margin-top: 90px;
+    opacity: 80%;  
+}
+  
+.fas:hover {
+    opacity: 0.6;
+}
+
+a{
+text-decoration: none;
+color: #ffffff;
+font-size: 18px;
+margin: 2px;
+}
+
+.a:hover {
+    opacity: 0.6;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*Configuración none-block*/
+
+#home {
+    display: block;
+  }
+
+#registro {
+    display: none;
+  }
+
+#muro {
+    display: none;
+  }
 
