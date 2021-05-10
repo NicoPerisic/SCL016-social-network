@@ -2,6 +2,7 @@
 
 //Registro con correo
 
+
 const formRegistro = document.getElementById("formRegistro");
 const handlerSignin = (e) => {
   e.preventDefault();
@@ -56,7 +57,6 @@ const logout = (e) => {
 }
 
 logout.addEventListener('click', logout)
-
 
 
 
