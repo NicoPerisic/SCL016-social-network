@@ -1,4 +1,4 @@
-// FUNCIONES 
+//FUNCIONES 
 
 //Registro con correo
 

@@ -310,13 +310,3 @@ margin: 2px;
 }
 
 
-/*Configuración none-block*/
-
-#home {
-    display: block;
-  }
-
-#registro {
-    display: none;
-  }
-
