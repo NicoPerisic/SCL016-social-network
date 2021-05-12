@@ -320,3 +320,32 @@ margin: 2px;
     display: none;
   }
 
+/* #fondoPerfil{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+    max-width: 2000px;
+    height: 3000px;
+    
+    background-color: rgb(26, 24, 36);
+    background-image: url(images/Fondo.png);
+}/*
+#perfilC {
+    position: absolute;
+    justify-content: center;
+    padding-top: 1px;
+    width: 550px;
+    height: 500px;
+    margin-top: 60px;
+background: #FFFFFF;
+opacity: 0.8;
+border-radius: 40px;
+top: 40%;
+left: auto;
+background-image: url(images/Eu.png);
+background-size: 120%;
+}*/
+
