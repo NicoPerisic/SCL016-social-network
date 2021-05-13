@@ -4,15 +4,16 @@ import {showRegistroHtmlElements} from '../templates/templateregister.js';
 //Templates de vistas - Función de Mostrar Rutas - Cada vista es una ruta ("Pintar")
 
 
-  export const showRouter = (rout) => {
+  export const showRoute = (hash) => {
   
-  if (rout == "#/login") { //Mostrar Login 
-    showHomeHtmlElements() 
-
+  if (hash == "#/") { //Mostrar Login 
+    return showHomeHtmlElements() 
+    
   }
 
-  else if (rout == "#/register") { //Mostrar Registro
-    showRegistroHtmlElements()
+  else if (hash == "#/register") { //Mostrar Registro
+    return showRegistroHtmlElements()
 
   }
 }
+
