@@ -23,7 +23,7 @@ export const showRegistroHtmlElements = () => {
       </form>
     `
 
-    let divFooterTwo = document.createElement('div');
+    let divFooterTwo = document.createElement('div');|
     divFooterTwo.classList.add('divFooterTwo');
     contenedorElementos.appendChild(divFooterTwo);
     divFooterTwo.innerHTML = /* html */ 

@@ -7,13 +7,21 @@ import {showRegistroHtmlElements} from '../templates/templateregister.js';
   export const showRoute = (hash) => {
   
   if (hash == "#/") { //Mostrar Login 
-    return showHomeHtmlElements() 
-    
+    return showHomeHtmlElements()  
   }
 
   else if (hash == "#/register") { //Mostrar Registro
     return showRegistroHtmlElements()
+  }
 
+  else if (hash == "#/muro") { //Mostrar Muro
+    return showMuroHtmlElements()
   }
 }
 
+
+/*
+const showTemplate = (hash) => {
+  const containerRoot = document.getElementById('home');
+  containerRoot.innerHTML = 
+}*/

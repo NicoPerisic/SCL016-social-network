@@ -1,7 +1,8 @@
+/*
 //FUNCIONES 
 
 //Registro con correo
-
+//Handler = controlador 
 
 const formRegistro = document.getElementById("formRegistro");
 const handlerSignin = (e) => {
@@ -22,6 +23,9 @@ const handlerSignin = (e) => {
 }
 
 formRegistro.addEventListener('submit', handlerSignin)
+
+
+
 
 
 //Login HOME
@@ -63,3 +67,5 @@ logout.addEventListener('click', logout)
 export {
   handlerSignin, handleLogin,
 };
+
+*/

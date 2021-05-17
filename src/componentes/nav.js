@@ -1,3 +1,6 @@
+//Barra de Navegación
+
+export const nav = () => {
 let divNav = document.createElement('nav');
 divNav.classList.add('divNav');
 let fondoMuro = document.getElementById('fondoMuro');
@@ -17,3 +20,6 @@ divNav.innerHTML = /* html */
     '</nav>' +
     '</div>'
     `
+
+return nav;
+};
