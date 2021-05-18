@@ -1,12 +1,12 @@
-//Barra de Navegación
+// Barra de Navegación
 
 export const nav = () => {
-let divNav = document.createElement('nav');
-divNav.classList.add('divNav');
-let fondoMuro = document.getElementById('fondoMuro');
-fondoMuro.appendChild(divNav);
-divNav.innerHTML = /* html */
-    `
+  const divNav = document.createElement('nav');
+  divNav.classList.add('divNav');
+  const fondoMuro = document.getElementById('fondoMuro');
+  fondoMuro.appendChild(divNav);
+  /* html */
+  divNav.innerHTML = `
     '<div class="dropdown" style="float:right;">' +
     '<button class="dropbtn"><img src="images/menu.png" class="iconMenu" alt="icono menú"></button>' +
     '<nav class="dropdown-content">' +
@@ -19,7 +19,7 @@ divNav.innerHTML = /* html */
     '</ul>' +
     '</nav>' +
     '</div>'
-    `
+    `;
 
-return nav;
+  return nav;
 };

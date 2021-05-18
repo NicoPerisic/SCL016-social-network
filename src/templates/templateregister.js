@@ -1,18 +1,19 @@
-//Segunda Página - Registro
+import { handlerSignin } from '../lib/index.js';
+
+// Segunda Página - Registro
 
 export const showRegistroHtmlElements = () => {
+  const img = document.createElement('img');
+  img.classList.add('portada');
+  img.src = 'images/logo.png';
+  const contenedorElementos = document.getElementById('contenedorHome');
+  contenedorElementos.appendChild(img);
 
-    let img = document.createElement('img');
-    img.classList.add('portada');
-    img.src = "images/logo.png";
-    let contenedorElementos = document.getElementById('contenedorHome');
-    contenedorElementos.appendChild(img);
-  
-    let divReg = document.createElement('div');
-    divReg.classList.add('contenedorHome');
-    contenedorElementos.appendChild(divReg);
-    divReg.innerHTML = /* html */ 
-    `
+  const divReg = document.createElement('div');
+  divReg.classList.add('contenedorHome');
+  contenedorElementos.appendChild(divReg);
+  /* html */
+  divReg.innerHTML = `
     <form id="formRegistro"> 
       <label for="username">Nombre:</label><br><input placeholder="ingresa tu nombre" type="text" id="username" class="inputRegistro" name="username"><br> 
       <label for="email">Email:</label><br><input placeholder="Ingresa un correo valido" type="text" id="email" class="inputRegistro" name="email"><br> 
@@ -21,19 +22,21 @@ export const showRegistroHtmlElements = () => {
       <button type="submit" id="btnConfirmar">CONFIRMAR</button> 
       <button type="submit" id="btnCancelar">CANCELAR</button> 
       </form>
-    `
+    `;
 
-    let divFooterTwo = document.createElement('div');|
-    divFooterTwo.classList.add('divFooterTwo');
-    contenedorElementos.appendChild(divFooterTwo);
-    divFooterTwo.innerHTML = /* html */ 
-    `
+  const divFooterTwo = document.createElement('div');
+  divFooterTwo.classList.add('divFooterTwo');
+  contenedorElementos.appendChild(divFooterTwo);
+  /* html */
+  divFooterTwo.innerHTML = `
       <div class="centrarRedes"> 
       <a class="fab fa-twitter-square fa-2x" href="https://www.youtube.com/watch?v=BtLSaxRnIhc"></a> 
       <a class="fab fa-facebook-square fa-2x" href="https://www.youtube.com/watch?v=BtLSaxRnIhc"></a> 
       <a class="fab fa-instagram-square fa-2x" href="https://www.youtube.com/watch?v=BtLSaxRnIhc"></a></div> 
       <div id="nombres">&copy;2021 Desarrollado por Tania Cariz, Nicole Perisić y Eunices Trujillo. Laboratoria SCL016.</div> 
       </div>
-      `
-  }
-  
+      `;
+
+  const formRegistro = document.getElementById('formRegistro');
+  formRegistro.addEventListener('submit', handlerSignin);
+};

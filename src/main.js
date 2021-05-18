@@ -1,12 +1,13 @@
-import {showRoute} from './componentes/router.js';
+import { showRoute } from './componentes/router.js';
 
-
-//Unico código por fuera - Se ejecuta al abrir la página
+// Unico código por fuera - Se ejecuta al abrir la página
 
 const init = () => {
+  showRoute(window.location.hash);
+};
 
-  showRoute(window.location.hash) 
+init(); // Toda la lógica de inicialización
 
-}
-
-init() //Toda la lógica de inicialización
+window.onpopstate = () => {
+  showRoute(window.location.hash);
+};
