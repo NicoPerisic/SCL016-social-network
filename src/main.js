@@ -11,3 +11,4 @@ init(); // Toda la lógica de inicialización
 window.onpopstate = () => {
   showRoute(window.location.hash);
 };
+

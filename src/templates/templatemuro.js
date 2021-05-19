@@ -6,9 +6,9 @@ export const showMuroHtmlElements = () => {
   const contenedorMuro = document.createElement('contenedorMuro');
   contenedorMuro.id = 'contenedorMuro';
 
-  contenedorMuro.appendChild(header());
-  contenedorMuro.appendChild(nav());
-  contenedorMuro.appendChild(footer());
+  contenedorMuro.appendChild(header);
+  contenedorMuro.appendChild(nav);
+  contenedorMuro.appendChild(footer);
 
   return contenedorMuro;
 };

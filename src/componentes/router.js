@@ -16,6 +16,7 @@ export const showRoute = (hash) => {
   if (hash === '#/muro') { // Mostrar Muro
     return showMuroHtmlElements();
   }
+
   return showHomeHtmlElements();
 };
 

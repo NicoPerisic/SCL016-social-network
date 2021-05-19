@@ -1,6 +1,6 @@
 // importamos la funcion que vamos a testear
-import { 
-  myFunction 
+import {
+  myFunction
 } from '../src/lib/main.js';
 
 describe('myFunction', () => {
@@ -8,7 +8,6 @@ describe('myFunction', () => {
     expect(typeof myFunction).toBe('function');
   });
 });
-
 
 /*
 

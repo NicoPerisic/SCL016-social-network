@@ -24,19 +24,6 @@ export const showRegistroHtmlElements = () => {
       </form>
     `;
 
-  const divFooterTwo = document.createElement('div');
-  divFooterTwo.classList.add('divFooterTwo');
-  contenedorElementos.appendChild(divFooterTwo);
-  /* html */
-  divFooterTwo.innerHTML = `
-      <div class="centrarRedes"> 
-      <a class="fab fa-twitter-square fa-2x" href="https://www.youtube.com/watch?v=BtLSaxRnIhc"></a> 
-      <a class="fab fa-facebook-square fa-2x" href="https://www.youtube.com/watch?v=BtLSaxRnIhc"></a> 
-      <a class="fab fa-instagram-square fa-2x" href="https://www.youtube.com/watch?v=BtLSaxRnIhc"></a></div> 
-      <div id="nombres">&copy;2021 Desarrollado por Tania Cariz, Nicole Perisić y Eunices Trujillo. Laboratoria SCL016.</div> 
-      </div>
-      `;
-
   const formRegistro = document.getElementById('formRegistro');
   formRegistro.addEventListener('submit', handlerSignin);
 };
