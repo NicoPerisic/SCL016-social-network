@@ -2,11 +2,12 @@
 body{
     font-family: 'Ubuntu', sans-serif;
     background-color: rgb(65, 64, 77);
+    
 }
 
 /*Primera página Home*/
 
-#fondohome{
+.fondo{
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     justify-content: center;

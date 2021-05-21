@@ -1,14 +1,7 @@
-import { header } from '../componentes/header.js';
-import { nav } from '../componentes/nav.js';
-import { footer } from '../componentes/footer.js';
+export const muro = () => {
+  const viewMuro = document.createElement('div');
+  viewMuro.id = 'muro';
+  viewMuro.appendChild(nav());
 
-export const showMuroHtmlElements = () => {
-  const contenedorMuro = document.createElement('contenedorMuro');
-  contenedorMuro.id = 'contenedorMuro';
-
-  contenedorMuro.appendChild(header);
-  contenedorMuro.appendChild(nav);
-  contenedorMuro.appendChild(footer);
-
-  return contenedorMuro;
+  return viewMuro;
 };

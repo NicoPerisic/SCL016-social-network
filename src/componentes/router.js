@@ -1,27 +1,34 @@
-import { showHomeHtmlElements } from '../templates/templatelogin.js';
-import { showRegistroHtmlElements } from '../templates/templateregister.js';
-import { showMuroHtmlElements } from '../templates/templatemuro.js';
+import { muro } from '../templates/templateMuro.js';
+import { login } from '../templates/templateLogin.js';
+import { register } from '../templates/templateRegister.js';
 
-// Templates de vistas - Función de Mostrar Rutas - Cada vista es una ruta ("Pintar")
+const showTemplate = (hash) => {
+  const containerRoot = document.getElementById('root');
+  containerRoot.innerHTML = '';
 
-export const showRoute = (hash) => {
-  if (hash === '#/login') { // Mostrar Login
-    return showHomeHtmlElements();
+  switch (hash) {
+    case '#/login':
+      containerRoot.appendChild(login());
+      break;
+    case '#/register':
+      containerRoot.appendChild(register());
+      break;
+    case '#/muro':
+      containerRoot.appendChild(muro());
+      break;
+    default:
+      containerRoot.innerHTML = 'ERROR';
+      break;
   }
-
-  if (hash === '#/register') { // Mostrar Registro
-    return showRegistroHtmlElements();
-  }
-
-  if (hash === '#/muro') { // Mostrar Muro
-    return showMuroHtmlElements();
-  }
-
-  return showHomeHtmlElements();
 };
 
-/*
-const showTemplate = (hash) => {
-  const containerRoot = document.getElementById('home');
-  containerRoot.innerHTML =
-} */
+export const showRoute = (hash) => {
+  if (hash === '#/login') {
+    return showTemplate(hash);
+  } if (hash === '#/register') {
+    return showTemplate(hash);
+  } if (hash === '#/muro') {
+    return showTemplate(hash);
+  }
+  return showTemplate(hash);
+};
