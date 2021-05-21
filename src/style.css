@@ -1,13 +1,7 @@
-
+/*background*/
 body{
     font-family: 'Ubuntu', sans-serif;
     background-color: rgb(65, 64, 77);
-    
-}
-
-/*Primera página Home*/
-
-.fondo{
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     justify-content: center;
@@ -19,6 +13,8 @@ body{
     background-color: rgb(26, 24, 36);
     background-image: url(images/Fondo.png);
 }
+
+/*Primera página Home*/
 
 .portada{
     display: flex;
@@ -293,7 +289,7 @@ li{
     margin-top: 90px;
     opacity: 80%;  
 }
-  
+
 .fas:hover {
     opacity: 0.6;
 }
@@ -312,7 +308,7 @@ margin: 2px;
 
 
 .iconMenu{
-   width: 20px; 
+    width: 20px; 
 }
 
 
@@ -356,9 +352,9 @@ margin: 2px;
 .dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}  
+
+.dropdown-content {
     display: none;
     position: absolute;
     right: 0;
@@ -367,8 +363,8 @@ margin: 2px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     
-  }
-  
+}
+
 .dropdown-content a {
     color: white;
     padding: 12px 16px;
@@ -377,12 +373,12 @@ margin: 2px;
     font-size: 15px;
     
 }
-  
-  .dropdown-content a:hover{
+
+.dropdown-content a:hover{
     background-color: #f1f1f1;
     color: #000;
 }
 
-    .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
