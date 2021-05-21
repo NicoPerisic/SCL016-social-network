@@ -1,12 +1,15 @@
-import { muro } from '../templates/templateMuro.js';
-import { login } from '../templates/templateLogin.js';
-import { register } from '../templates/templateRegister.js';
+import { muro } from '../templates/templatemuro.js';
+import { login } from '../templates/templatelogin.js';
+import { register } from '../templates/templateregister.js';
 
 const showTemplate = (hash) => {
   const containerRoot = document.getElementById('root');
   containerRoot.innerHTML = '';
 
   switch (hash) {
+    case '#/':
+      containerRoot.appendChild(login());
+      break;
     case '#/login':
       containerRoot.appendChild(login());
       break;

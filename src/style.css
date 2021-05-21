@@ -14,26 +14,23 @@ body{
     background-image: url(images/Fondo.png);
 }
 
-/*Primera página Home*/
+/*Primera página LOGIN*/
 
 .portada{
-    display: flex;
+    display:block;
+    height: 130px;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 30px;
     justify-content: center;
-    padding-top: 10px;
-    width: 550px;
-    height: 150px;
-    margin-top: 60px;
-    margin-bottom: 30-px;
 }
 
-.contenedorHome{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#formLogin{
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    color: #ffffff;
     font-size: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .btnLogin{
@@ -73,7 +70,7 @@ body{
     text-decoration: none;
 }
 
-.elementosGoogle{
+#elementosGoogle{
     display: flex;
     flex-direction: column;
     align-items: center;

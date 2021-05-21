@@ -3,8 +3,7 @@ import { footer } from '../componentes/footer.js';
 export const login = () => {
   const viewLogin = /* html */ `
   <div id="contenedorLogin">
-  <img class="portada">
-  <div id="divContenidoLogin">
+  <img class="portada" src="images/logo.png" />
     <form id="formLogin">
       <label for="email">Correo:</label><br><input placeholder="ingresa tu correo" type="text" id="emailHome"
         class="inputHome" name="email"><br>
@@ -17,7 +16,6 @@ export const login = () => {
       <div id="textoDos"> O ingresa con tu cuerta de Google</div>
       <a class="fab fa-google fa-3x" id="google" onclick="authGoogle()"></a>
       <div id="textoTres">¿Olvidaste tu contraseña?, recuperala <a><span id="aquiTwo">aquí</span></a></div>
-    </div>
   </div>
 </div>`;
 
