@@ -163,7 +163,7 @@ body{
     margin-bottom: 30px;
 }
 
-.contenedorRegistro{
+#contenedorRegistro{
     display: flex;
     flex-direction: column;
     align-items: center;
