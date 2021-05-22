@@ -46,6 +46,13 @@ function authGoogle() {
     });
 }
 
+  firebase.auth().signOut().then(function(){
+    // Sign-out succesful.
+  }).catch(function(error) {
+    // an error happened.
+  });
+
+
 export {
   authGoogle,
   handlerLogin,

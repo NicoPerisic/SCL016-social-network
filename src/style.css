@@ -9,7 +9,7 @@ body{
     margin-top: 40px;
     margin-bottom: 40px;
     width: 90%;
-    height: 800px;
+    height: 1000px;
     background-color: rgb(26, 24, 36);
     background-image: url(images/Fondo.png);
 }
@@ -83,9 +83,7 @@ body{
     font-size: 20px;
 }
 
-/*Registrate aquí*/
-
-#aqui{ 
+#aqui{
     font-weight: bold;
     text-decoration: underline;
     cursor: pointer;
@@ -94,8 +92,6 @@ body{
 #aqui:hover {
     opacity: 0.6;
 }
-
-/*Recupera tu contraseña aquí*/
 
 #aquiTwo{
     font-weight: bold;
@@ -113,13 +109,15 @@ body{
     margin-bottom: 30px;
 }
 
+
+
 /*Footer*/
 
 .centrarRedes {
     display: flex;
     justify-content: center;
 }
-  
+
 .fab {
     color: #ffffff ;
     border: transparent;
@@ -129,11 +127,11 @@ body{
     opacity: 80%;
     text-decoration: none;  
 }
-  
+
 .fab:hover {
     opacity: 0.6;
 }
-  
+
 #nombres{
     text-align: center;
     font-size: 12px;
@@ -147,14 +145,30 @@ body{
 
 /*Página Registro General*/
 
+#fondoRegistro{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+    height: 1000px;
+    background-color: rgb(26, 24, 36);
+    background-image: url(images/Fondo.png);
+}
+
 #textoDos{
     text-align: center;
     font-size: 20px;
     margin-bottom: 30px;
 }
 
-#formRegistro{
+#contenedorRegistro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    margin-top: 50px;
     color: rgb(255, 255, 255);
     font-size: 20px;
     margin-bottom: 30px;
@@ -174,15 +188,10 @@ body{
     margin: 20px;
 }
 
-#confpassword {
-    margin-top: -40px;
-}
 
 #btnConfirmar{
     margin-right: 30px;
-    margin-top: 10px;
-    justify-content: center;
-    align-items: center;
+    margin-top: 30px;
     font-family: 'Ubuntu', sans-serif;
     width: 150px;
     height: 40px;
@@ -198,8 +207,6 @@ body{
 }
 
 #btnCancelar{
-    justify-content: center;
-    align-items: center;
     font-family: 'Ubuntu', sans-serif;
     width: 150px;
     height: 40px;
@@ -253,9 +260,63 @@ body{
     margin-top: 700px;
     display: flex;
     justify-content: center;
-  }
+}
 
-  
+.headerMuro{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.inputPost{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100vw;
+    max-width: 550px;
+    height: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    background: #ffffff;
+    border-radius: 30px; 
+    opacity: 80%;
+    margin: 20px;
+}
+
+#btnLike {
+    margin-left: 360px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #ffffff;
+    border-radius: 50px; 
+    opacity: 80%;
+
+}
+
+#btnLike:hover {
+    opacity: 0.6;
+}
+
+
+#btnPublicar {
+    margin-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #ffffff;
+    border-radius: 50px; 
+    opacity: 80%;
+}
+
+#btnPublicar:hover {
+    opacity: 0.6;
+}
+
+
 /*Barra de Navegación*/
 
 .menu{
@@ -263,23 +324,15 @@ body{
     justify-content: flex-end;
     align-items: flex-start;
     color: #ffffff;
+        margin-top: 90px;
+        
+
 }
 
 li{
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-}
-
-.fas {
-    color: #ffffff ;
-    border: transparent;
-    margin-top: 90px;
-    opacity: 80%;  
-}
-
-.fas:hover {
-    opacity: 0.6;
 }
 
 a{
@@ -319,7 +372,7 @@ margin: 2px;
             justify-content: space-between;
     height: 50px;
     width: 100%;
-    position: relative;
+    position: sticky;
     display: inline-block;
     text-align: center;
     top: 0;

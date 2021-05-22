@@ -1,6 +1,7 @@
 import { footer } from '../componentes/footer.js';
 
 export const login = () => {
+  const divLoginContainer = document.createElement('div');
   const viewLogin = /* html */ `
   <div id="contenedorLogin">
   <img class="portada" src="images/logo.png" />
@@ -19,7 +20,7 @@ export const login = () => {
   </div>
 </div>`;
 
-  const divLoginContainer = document.createElement('div');
+
   divLoginContainer.innerHTML = viewLogin;
   divLoginContainer.appendChild(footer());
 

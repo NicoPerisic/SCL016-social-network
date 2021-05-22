@@ -1,7 +1,19 @@
+import { nav } from '../componentes/nav.js';
 import { footer } from '../componentes/footer.js';
 
 export const register = () => {
   const viewRegister = /* html */ `
+  <div class="dropdown" style="float:right;"> 
+  <button class="dropbtn"><img src="images/menu.png" class="iconMenu" alt="icono menú"></button>
+  <nav class="dropdown-content"> 
+    <ul class="linklist"> 
+      <li class="enlace"><a href="#inicio">Inicio</a></li> 
+      <li class="enlace"><a href="#horoscopo">Horóscopo</a></li> 
+      <li class="enlace"><a href="#nosotras">Nosotras</a></li> 
+      <li class="enlace"><a href="#logout">Logout</a></li>
+    </ul> 
+  </nav> 
+  </div>
   <div id="contenedorRegistro">
   <img class="portada" src="images/logo.png" />
     <form id="formRegistro"> 
@@ -14,7 +26,9 @@ export const register = () => {
     </form>
   </div>`;
 
+
   const divRegisterContainer = document.createElement('div');
+  divRegisterContainer.appendChild(nav());
   divRegisterContainer.innerHTML = viewRegister;
   divRegisterContainer.appendChild(footer());
 
