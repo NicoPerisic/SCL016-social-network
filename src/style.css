@@ -9,7 +9,7 @@ body{
     margin-top: 40px;
     margin-bottom: 40px;
     width: 90%;
-    height: 1000px;
+    height: 800px;
     background-color: rgb(26, 24, 36);
     background-image: url(images/Fondo.png);
 }
@@ -83,7 +83,9 @@ body{
     font-size: 20px;
 }
 
-#aqui{
+/*Registrate aquí*/
+
+#aqui{ 
     font-weight: bold;
     text-decoration: underline;
     cursor: pointer;
@@ -92,6 +94,8 @@ body{
 #aqui:hover {
     opacity: 0.6;
 }
+
+/*Recupera tu contraseña aquí*/
 
 #aquiTwo{
     font-weight: bold;
@@ -108,8 +112,6 @@ body{
     font-size: 20px;
     margin-bottom: 30px;
 }
-
-
 
 /*Footer*/
 
@@ -145,32 +147,17 @@ body{
 
 /*Página Registro General*/
 
-#fondoRegistro{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 90%;
-    height: 1000px;
-    background-color: rgb(26, 24, 36);
-    background-image: url(images/Fondo.png);
-}
-
 #textoDos{
     text-align: center;
     font-size: 20px;
     margin-bottom: 30px;
 }
 
-#contenedorRegistro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#formRegistro{
     text-align: center;
-    margin-top: 50px;
     color: rgb(255, 255, 255);
     font-size: 20px;
+    margin-bottom: 30px;
 }
 
 .inputRegistro{
@@ -187,10 +174,13 @@ body{
     margin: 20px;
 }
 
+#confpassword {
+    margin-top: -40px;
+}
 
 #btnConfirmar{
     margin-right: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
     justify-content: center;
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
@@ -265,6 +255,7 @@ body{
     justify-content: center;
   }
 
+  
 /*Barra de Navegación*/
 
 .menu{

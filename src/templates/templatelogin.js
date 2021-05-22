@@ -5,11 +5,11 @@ export const login = () => {
   <div id="contenedorLogin">
   <img class="portada" src="images/logo.png" />
     <form id="formLogin">
-      <label for="email">Correo:</label><br><input placeholder="ingresa tu correo" type="text" id="emailHome"
+      <label for="email">Correo:</label><br><input placeholder="Ingresa tu correo" type="text" id="emailHome"
         class="inputHome" name="email"><br>
-      <label for="password">Contraseña:</label><br><input placeholder="ingresa tu contraseña" type="password"
+      <label for="password">Contraseña:</label><br><input placeholder="Ingresa tu contraseña" type="password"
         id="passwordHome" class="inputHome" name="password"><br>
-      <button class="btnLogin">Login</button>
+      <button class="btnLogin" id="btnLogin">Login</button>
     </form>
     <div id="elementosGoogle">
       <div id="textoUno">¿No tienes cuenta? Registrate <a href="/#/register"><span id="aqui">aquí</span></a></div>

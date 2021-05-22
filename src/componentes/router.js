@@ -1,6 +1,7 @@
 import { muro } from '../templates/templatemuro.js';
 import { login } from '../templates/templatelogin.js';
 import { register } from '../templates/templateregister.js';
+import { handlerLogin, handlerRegister } from '../lib/index.js';
 
 const showTemplate = (hash) => {
   const containerRoot = document.getElementById('root');
@@ -35,3 +36,23 @@ export const showRoute = (hash) => {
   }
   return showTemplate(hash);
 };
+
+// Cambia página frente a cambio de #
+
+window.addEventListener('hashchange', () => {
+  showRoute(window.location.hash);
+}, false);
+
+// Generar eventos de submit en elementos dinámicos en templates
+
+document.addEventListener('click', (e) => {
+  console.log(e);
+  if (e.target && e.target.id === 'btnLogin') {
+    return handlerLogin(e);
+  }
+  if (e.target && e.target.id === 'btnConfirmar') {
+    return handlerRegister(e);
+  }
+
+  return null;
+});

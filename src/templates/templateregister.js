@@ -14,7 +14,6 @@ export const register = () => {
     </form>
   </div>`;
 
-
   const divRegisterContainer = document.createElement('div');
   divRegisterContainer.innerHTML = viewRegister;
   divRegisterContainer.appendChild(footer());

@@ -1,7 +1,7 @@
 // Registro con correo
 // Handler = controlador
 
-const handlerSignin = (e) => {
+const handlerRegister = (e) => {
   e.preventDefault();
 
   const signupEmail = document.getElementById('email').value;
@@ -9,9 +9,10 @@ const handlerSignin = (e) => {
 
   firebase.auth().createUserWithEmailAndPassword(signupEmail, signupPassword)
     .then(() => {
-      alert('Registrado');
-    }).catch(() => {
-      alert('Ocurrió un error inesperado');
+      alert('Registro Exitoso');
+    }, (error) => {
+      console.error(error);
+      alert(`Error: ${error.message}`);
     });
 };
 
@@ -26,10 +27,13 @@ const handlerLogin = (e) => {
   firebase.auth().signInWithEmailAndPassword(emailHome, passwordHome)
     .then(() => {
       window.location.href = '/#/muro';
-    }).catch(() => {
-      alert('Inténtalo nuevamente');
+    }, (error) => {
+      console.error(error);
+      alert(`Error: ${error.message}`);
     });
 };
+
+// Login Google
 
 function authGoogle() {
   const providerGoogle = new firebase.auth.GoogleAuthProvider();
@@ -38,12 +42,12 @@ function authGoogle() {
     .then(() => {
       window.location.href = '/#/muro';
     }).catch(() => {
-      alert('Inténtalo nuevamente');
+      alert(`Intente nuevamente`);
     });
 }
 
 export {
   authGoogle,
   handlerLogin,
-  handlerSignin,
+  handlerRegister,
 };
