@@ -1,6 +1,7 @@
 import { muro } from '../templates/templatemuro.js';
 import { login } from '../templates/templatelogin.js';
 import { register } from '../templates/templateregister.js';
+import { aboutUs } from '../templates/templateabout-us.js';
 import { handlerLogin, handlerRegister } from '../lib/index.js';
 
 const showTemplate = (hash) => {
@@ -20,6 +21,9 @@ const showTemplate = (hash) => {
     case '#/muro':
       containerRoot.appendChild(muro());
       break;
+    case '#/nosotras':
+      containerRoot.appendChild(aboutUs());
+      break;
     default:
       containerRoot.innerHTML = 'ERROR';
       break;
@@ -32,6 +36,8 @@ export const showRoute = (hash) => {
   } if (hash === '#/register') {
     return showTemplate(hash);
   } if (hash === '#/muro') {
+    return showTemplate(hash);
+  } if (hash === '#/nosotras') {
     return showTemplate(hash);
   }
   return showTemplate(hash);
@@ -53,6 +59,5 @@ document.addEventListener('click', (e) => {
   if (e.target && e.target.id === 'btnConfirmar') {
     return handlerRegister(e);
   }
-
   return null;
 });

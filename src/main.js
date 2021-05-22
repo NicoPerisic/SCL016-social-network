@@ -1,4 +1,3 @@
-
 import { showRoute } from './componentes/router.js';
 
 const init = () => {
@@ -6,6 +5,3 @@ const init = () => {
 };
 
 init();
-
-
-

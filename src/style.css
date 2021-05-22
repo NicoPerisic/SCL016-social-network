@@ -6,10 +6,8 @@ body{
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 90%;
-    height: 1000px;
+    width: 50%;
+    height: 700px;
     background-color: rgb(26, 24, 36);
     background-image: url(images/Fondo.png);
 }
@@ -21,35 +19,34 @@ body{
     height: 130px;
     width: 450px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 20px;
     justify-content: center;
 }
 
 #formLogin{
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     color: #ffffff;
-    margin-top: 20px;
-    margin-bottom: 30px;
 }
 
 .btnLogin{
     font-family: 'Ubuntu', sans-serif;
     width: 150px;
-    height: 48px;
+    height: 40px;
     margin: 10px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     background: #ffffff;
     border-radius: 50px; 
     opacity: 80%;
+    border: none;
 }
 
 .btnLogin:hover {
     opacity: 0.6;
 }
 
-.inputHome{
+.inputLogin{
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     width: 250px;
@@ -57,30 +54,34 @@ body{
     font-weight: bold;
     background: #ffffff;
     border-radius: 50px; 
+    border-bottom: transparent;
     opacity: 80%;
     margin: 15px;
     font-size: 18px;
+    border: none;
 }
 
-.inputHome:hover {
+.inputLogin:hover {
     opacity: 0.6;
 }
 
-.google{
+#google{
     text-decoration: none;
+    margin-top: 15px;
 }
 
 #elementosGoogle{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
+    margin-top: 10px;
 }
 
-#textoUno{
-    font-size: 20px;
+.textos{
+    color: #ffffff;
+    font-size: 16px;
+    padding: 3px;
+
 }
 
 #aqui{
@@ -103,15 +104,22 @@ body{
     opacity: 0.6;
 }
 
-#textoTres{
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-
 
 /*Footer*/
+
+.divFooter{
+    position: absolute;
+    top: 610px;
+    left: 10px;
+    right: 10px;
+}
+
+.divFooterMuro{
+    position: absolute;
+    top: 655px;
+    left: 10px;
+    right: 10px;
+}
 
 .centrarRedes {
     display: flex;
@@ -121,11 +129,11 @@ body{
 .fab {
     color: #ffffff ;
     border: transparent;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
     opacity: 80%;
-    text-decoration: none;  
+    text-decoration: none; 
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .fab:hover {
@@ -145,33 +153,14 @@ body{
 
 /*Página Registro General*/
 
-#fondoRegistro{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 90%;
-    height: 1000px;
-    background-color: rgb(26, 24, 36);
-    background-image: url(images/Fondo.png);
-}
-
-#textoDos{
+#formRegistro{
     text-align: center;
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-#contenedorRegistro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
     color: rgb(255, 255, 255);
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+#confpassword{
+    margin-top: -20px;
 }
 
 .inputRegistro{
@@ -180,26 +169,28 @@ body{
     width: 100vw;
     max-width: 250px;
     height: 40px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     background: #ffffff;
     border-radius: 50px; 
     opacity: 80%;
-    margin: 20px;
+    margin: 15px;
+    border: none;
 }
 
 
 #btnConfirmar{
-    margin-right: 30px;
-    margin-top: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
     font-family: 'Ubuntu', sans-serif;
     width: 150px;
     height: 40px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     background: #ffffff;
     border-radius: 50px; 
     opacity: 80%;
+    border: none;
 }
 
 #btnConfirmar:hover {
@@ -210,11 +201,12 @@ body{
     font-family: 'Ubuntu', sans-serif;
     width: 150px;
     height: 40px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     background: #ffffff;
     border-radius: 50px; 
     opacity: 80%;
+    border: none;
 }
 
 #btnCancelar:hover {
@@ -223,19 +215,6 @@ body{
 
 
 /*Tercera página - MURO*/
-
-#fondoMuro{
-    font-family: 'Ubuntu', sans-serif;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 90%;
-    height: 1000px;
-    background-color: rgb(26, 24, 36);
-    background-image: url(images/Fondo.png);
-}
 
 .portadaMuro{
     display: flex;
@@ -256,12 +235,6 @@ body{
     font-size: 20px;
 }
 
-.centrarRedesOne{
-    margin-top: 700px;
-    display: flex;
-    justify-content: center;
-}
-
 .headerMuro{
     font-size: 20px;
     color: white;
@@ -272,7 +245,7 @@ body{
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     width: 100vw;
-    max-width: 550px;
+    max-width: 480px;
     height: 100px;
     font-size: 15px;
     font-weight: bold;
@@ -280,36 +253,41 @@ body{
     border-radius: 30px; 
     opacity: 80%;
     margin: 20px;
+    border: none;
+}
+
+.btnsMuro{
+    display: flex;
+    justify-content: flex-end;
 }
 
 #btnLike {
-    margin-left: 360px;
     font-family: 'Ubuntu', sans-serif;
     width: 100px;
     height: 40px;
     font-size: 12px;
     font-weight: bold;
     background: #ffffff;
-    border-radius: 50px; 
+    border-radius: 15px;
     opacity: 80%;
-
+    border: none;
 }
 
 #btnLike:hover {
     opacity: 0.6;
 }
 
-
 #btnPublicar {
-    margin-top: 10px;
     font-family: 'Ubuntu', sans-serif;
     width: 100px;
     height: 40px;
     font-size: 12px;
     font-weight: bold;
     background: #ffffff;
-    border-radius: 50px; 
-    opacity: 80%;
+    border-radius: 15px; 
+    opacity: 80%;    
+    margin-left: 10px;
+    border: none;
 }
 
 #btnPublicar:hover {
@@ -318,16 +296,6 @@ body{
 
 
 /*Barra de Navegación*/
-
-.menu{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    color: #ffffff;
-        margin-top: 90px;
-        
-
-}
 
 li{
     display: flex;
@@ -351,6 +319,7 @@ margin: 2px;
 .iconMenu{
     width: 20px; 
 }
+
 
 
 .dropbtn {
@@ -391,35 +360,52 @@ margin: 2px;
 }
     
 .dropdown {
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 20%;
 }  
 
 .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
-    background-color: rgba(0,0,0,0.2);
+    /*background-color: rgba(51, 44, 56, 0.13);*/
     min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*box-shadow: 0px 8px 16px 0px rgba(65, 63, 63, 0.2);*/
     z-index: 1;
-    
 }
 
 .dropdown-content a {
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     font-size: 15px;
-    
+    border-radius: 15px;
 }
 
 .dropdown-content a:hover{
-    background-color: #f1f1f1;
-    color: #000;
+    background-color: #e5c8ffc9;
+    color: rgb(41, 37, 37);
+    opacity: 50%;
+    font-size: 18px;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+
+/* About Us */
+
+#textoAboutUs { 
+    margin-top: 50px;
+    text-align: center;
+    width: 500px;
+    color: #ffffff;
+}
+
+.nosotras {
+    margin-top: 100px;
+    height: 130px;
 }

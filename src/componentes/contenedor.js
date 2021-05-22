@@ -1,4 +1,4 @@
-// Contenedor
+// Contenedor Post
 
 export const contenedorPost = () => {
   const divContenedorPost = document.createElement('div');

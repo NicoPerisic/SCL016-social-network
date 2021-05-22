@@ -1,6 +1,4 @@
-
-
-  /* Logout
+/* Logout
   
   const outHome = document.getElementById("logout");
   const logout = (e) => {

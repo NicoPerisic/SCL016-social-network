@@ -42,16 +42,9 @@ function authGoogle() {
     .then(() => {
       window.location.href = '/#/muro';
     }).catch(() => {
-      alert(`Intente nuevamente`);
+      alert('Intente nuevamente');
     });
 }
-
-  firebase.auth().signOut().then(function(){
-    // Sign-out succesful.
-  }).catch(function(error) {
-    // an error happened.
-  });
-
 
 export {
   authGoogle,

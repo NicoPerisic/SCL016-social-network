@@ -1,3 +1,5 @@
+// Footer texto páginas Iniciales
+
 export const footer = () => {
   const footerView = /* html */ ` 
     <div class="centrarRedes"> 
