@@ -2,7 +2,7 @@ import { muro } from '../templates/templatemuro.js';
 import { login } from '../templates/templatelogin.js';
 import { register } from '../templates/templateregister.js';
 import { aboutUs } from '../templates/templateabout-us.js';
-import { handlerLogin, handlerRegister } from '../lib/index.js';
+import { handlerLogin, handlerRegister, authGoogle } from '../lib/index.js';
 
 const showTemplate = (hash) => {
   const containerRoot = document.getElementById('root');
@@ -58,6 +58,9 @@ document.addEventListener('click', (e) => {
   }
   if (e.target && e.target.id === 'btnConfirmar') {
     return handlerRegister(e);
+  }
+  if (e.target && e.target.id === 'google') {
+    return authGoogle(e);
   }
   return null;
 });
