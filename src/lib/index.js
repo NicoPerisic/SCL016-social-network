@@ -4,7 +4,6 @@
 const handlerRegister = (e) => {
   e.preventDefault();
 
-  const signupName = document.getElementById('username').value;
   const signupEmail = document.getElementById('email').value;
   const signupPassword = document.getElementById('password').value;
 
@@ -28,6 +27,7 @@ const handlerLogin = (e) => {
 
   firebase.auth().signInWithEmailAndPassword(emailHome, passwordHome)
     .then(() => {
+      // Signed in
       window.location.href = '/#/muro';
     }, (error) => {
       console.error(error);
@@ -74,6 +74,18 @@ const recoverPass = (e) => {
       alert('Intente nuevamente');
     });
 };
+
+// Observador
+
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    console.log(user);
+    window.location.href = '/#/muro';
+  } else {
+    console.log('no existe');
+    window.location.href = '/#/login';
+  }
+});
 
 export {
   authGoogle,

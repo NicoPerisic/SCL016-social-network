@@ -1,9 +1,16 @@
-import {
-  handlerLogin,
-} from '../src/lib/index.js';
+import { nav } from '../src/componentes/nav.js';
+import { aboutUs } from '../src/templates/templateabout-us.js';
 
-describe('handlerLogin', () => {
-  it('nos permite hacer login', () => {
-    expect(handlerLogin instanceof HTMLElement).toBe(true);
+describe('nav', () => {
+  it('should render without crashing', () => {
+    const navTest = nav();
+    expect(navTest instanceof HTMLElement).toBe(true);
+  });
+});
+
+describe('aboutUs', () => {
+  it('should render without crashing', () => {
+    const aboutUsTest = aboutUs();
+    expect(aboutUsTest instanceof HTMLElement).toBe(true);
   });
 });

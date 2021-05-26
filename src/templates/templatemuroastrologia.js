@@ -4,7 +4,7 @@ import { footerMuro } from '../componentes/footerMuro.js';
 export const muroAstrología = () => {
   const divMuroAstroContainer = document.createElement('div');
   const viewMuroAstro = /* html */ `
-    <div id="contenedorMuro">
+    <div id="contenedorMuroAstro">
     <img id="portadaAstro" src="images/logo.png" />
     <img id="astro" src="images/astro.png" />
       <div class="headerMuroAstro">¿Quieres hacer una consulta o compartir alguna información sobre Astrología? ¡Hazlo aquí! </div>

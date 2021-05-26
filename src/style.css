@@ -472,5 +472,13 @@ margin: 2px;
     text-align: center;
     width: 380px;
     font-size: 18px;
-    color: white;
+    color: rgb(255, 255, 255);
+}
+
+#contenedorMuroAstro{
+    background-image: url(images/FondoAstrología2.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
