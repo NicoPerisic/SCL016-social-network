@@ -2,7 +2,7 @@ import { muro } from '../templates/templatemuro.js';
 import { login } from '../templates/templatelogin.js';
 import { register } from '../templates/templateregister.js';
 import { aboutUs } from '../templates/templateabout-us.js';
-import { handlerLogin, handlerRegister, authGoogle } from '../lib/index.js';
+import { restablecimiento } from '../templates/templaterestablecimiento.js';
 
 const showTemplate = (hash) => {
   const containerRoot = document.getElementById('root');
@@ -17,6 +17,9 @@ const showTemplate = (hash) => {
       break;
     case '#/register':
       containerRoot.appendChild(register());
+      break;
+    case '#/restablecimiento':
+      containerRoot.appendChild(restablecimiento());
       break;
     case '#/muro':
       containerRoot.appendChild(muro());
@@ -35,6 +38,8 @@ export const showRoute = (hash) => {
     return showTemplate(hash);
   } if (hash === '#/register') {
     return showTemplate(hash);
+  } if (hash === '#/restablecimiento') {
+    return showTemplate(hash);
   } if (hash === '#/muro') {
     return showTemplate(hash);
   } if (hash === '#/nosotras') {
@@ -48,19 +53,3 @@ export const showRoute = (hash) => {
 window.addEventListener('hashchange', () => {
   showRoute(window.location.hash);
 }, false);
-
-// Generar eventos de submit en elementos dinámicos en templates
-
-document.addEventListener('click', (e) => {
-  console.log(e);
-  if (e.target && e.target.id === 'btnLogin') {
-    return handlerLogin(e);
-  }
-  if (e.target && e.target.id === 'btnConfirmar') {
-    return handlerRegister(e);
-  }
-  if (e.target && e.target.id === 'google') {
-    return authGoogle(e);
-  }
-  return null;
-});

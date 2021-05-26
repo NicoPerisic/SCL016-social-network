@@ -1,17 +1,8 @@
 import { footer } from '../componentes/footer.js';
+import { handlerRegister } from '../lib/index.js';
 
 export const register = () => {
   const viewRegister = /* html */ `
-  <div class="dropdown" style="float:right;"> 
-  <nav class="dropdown-content"> 
-    <ul class="linklist"> 
-      <li class="enlace"><a href="#inicio">Inicio</a></li> 
-      <li class="enlace"><a href="#horoscopo">Horóscopo</a></li> 
-      <li class="enlace"><a href="#nosotras">Nosotras</a></li> 
-      <li class="enlace"><a href="#logout">Logout</a></li>
-    </ul> 
-  </nav> 
-  </div>
   <div id="contenedorRegistro">
   <img class="portada" src="images/logo.png" />
     <form id="formRegistro"> 
@@ -27,6 +18,12 @@ export const register = () => {
   const divRegisterContainer = document.createElement('div');
   divRegisterContainer.innerHTML = viewRegister;
   divRegisterContainer.appendChild(footer());
+
+  const confirmarTwo = divRegisterContainer.querySelector('#btnConfirmar');
+  confirmarTwo.addEventListener('click', (e) => {
+    console.log('registro OK');
+    handlerRegister(e);
+  });
 
   return divRegisterContainer;
 };

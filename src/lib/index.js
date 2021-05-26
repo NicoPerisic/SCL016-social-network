@@ -46,8 +46,21 @@ function authGoogle() {
     });
 }
 
+// Logout
+
+const handlerLogout = (e) => {
+  e.preventDefault();
+  firebase.auth().signOut()
+    .then(() => {
+      window.location.href = '/#/login';
+    }).catch(() => {
+      alert('Intente nuevamente');
+    });
+};
+
 export {
   authGoogle,
   handlerLogin,
   handlerRegister,
+  handlerLogout,
 };

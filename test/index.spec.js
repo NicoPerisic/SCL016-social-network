@@ -1,33 +1,9 @@
-// importamos la funcion que vamos a testear
 import {
-  myFunction
-} from '../src/lib/main.js';
+  handlerLogin,
+} from '../src/lib/index.js';
 
-describe('myFunction', () => {
-  it('debería ser una función', () => {
-    expect(typeof myFunction).toBe('function');
+describe('handlerLogin', () => {
+  it('nos permite hacer login', () => {
+    expect(handlerLogin instanceof HTMLElement).toBe(true);
   });
 });
-
-/*
-
-import {
-  filterByGeneration, filterByType,
-} from '../src/data.js';
-import data from '../src/data/pokemon/pokemon.js';
-
-
-
-describe('filterByGeneration', () => {
-  it('nos da la cantidad de Pokémon Kanto', () => {
-    expect(filterByGeneration(data.pokemon, 'Kanto')).toHaveLength(151);
-  });
-});
-
-describe('filterByType', () => {
-  it('Nos da la cantidad específica de Pokémon por tipo', () => {
-    expect(filterByType(data.pokemon, 'water')).toHaveLength(50);
-  }); 
-});
-
-*/
