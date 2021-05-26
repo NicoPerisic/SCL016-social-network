@@ -17,7 +17,7 @@ export const login = () => {
       <div class="textos">¿No tienes cuenta? Registrate <a href="/#/register"><span id="aqui">aquí</span></a></div>
       <div class="textos"> O ingresa con tu cuerta de Google</div>
       <a class="fab fa-google fa-3x" id="google"></a>
-      <div class="textos">¿Olvidaste tu contraseña?, recuperala <a href="/#/restablecimiento"><span id="aquiTwo">aquí</span></a></div>
+      <div class="textos">¿Olvidaste tu contraseña?, recuperala <a href="/#/recover"><span id="aquiTwo">aquí</span></a></div>
   </div>
 </div>`;
 

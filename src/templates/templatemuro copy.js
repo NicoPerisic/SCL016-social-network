@@ -1,14 +1,14 @@
 import { nav } from '../componentes/nav.js';
 import { footerMuro } from '../componentes/footerMuro.js';
 
-export const muro = () => {
-  const divMuroContainer = document.createElement('div');
-  const viewMuro = /* html */ `
+export const perfil = () => {
+  const divPerfilContainer = document.createElement('div');
+  const viewPerfil = /* html */ `
     <div id="contenedorMuro">
       <img class="portadaMuro" src="images/logo.png" />
       <div class="headerMuro">¡Bienvenidos a Aquelarre!</div>
       <div class="inviteMuro"></div>
-        <form id="formMuro"> 
+        <form id="formRegistro"> 
           <label for="post"></label><br><input placeholder="¿Qué nos contarás hoy ;)?" type="text" id="createPost" class="inputPost" name="post"><br> 
           <div class="btnsMuro">
           <button type="submit" id="btnLike">Like</button> 
@@ -18,10 +18,10 @@ export const muro = () => {
         <div class="centrarRedesOne">
     </div>`;
 
-  divMuroContainer.innerHTML = viewMuro;
+  divPerfilContainer.innerHTML = viewPerfil;
 
-  divMuroContainer.appendChild(nav());
-  divMuroContainer.appendChild(footerMuro());
+  divPerfilContainer.appendChild(nav());
+  divPerfilContainer.appendChild(footerMuro());
 
   return divMuroContainer;
 };

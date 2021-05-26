@@ -4,11 +4,13 @@
 const handlerRegister = (e) => {
   e.preventDefault();
 
+  const signupName = document.getElementById('username').value;
   const signupEmail = document.getElementById('email').value;
   const signupPassword = document.getElementById('password').value;
 
   firebase.auth().createUserWithEmailAndPassword(signupEmail, signupPassword)
-    .then(() => {
+    .then((data) => {
+      console.log(data);
       alert('Registro Exitoso');
     }, (error) => {
       console.error(error);
@@ -58,9 +60,25 @@ const handlerLogout = (e) => {
     });
 };
 
+// Restablecimiento
+
+const recoverPass = (e) => {
+  e.preventDefault();
+
+  const emailAddress = document.getElementById('emailRecover').value;
+
+  firebase.auth().sendPasswordResetEmail(emailAddress)
+    .then(() => {
+      alert('Correo enviado');
+    }).catch(() => {
+      alert('Intente nuevamente');
+    });
+};
+
 export {
   authGoogle,
   handlerLogin,
   handlerRegister,
   handlerLogout,
+  recoverPass,
 };

@@ -7,8 +7,8 @@ export const nav = () => {
     <nav class="dropdown-content"> 
       <ul class="linklist"> 
         <li class="enlace"><a href="#/muro">Inicio</a></li> 
-        <li class="enlace"><a href="#perfil">Perfil</a></li> 
-        <li class="enlace"><a href="#horoscopo">Horóscopo</a></li> 
+        <li class="enlace"><a href="#/perfil">Perfil</a></li> 
+        <li class="enlace" id= 'astrologia'><a href="#/astrologia">Astrología</a></li> 
         <li class="enlace" id= "nosotras"><a href="#/nosotras">Nosotras</a></li> 
         <li class="enlace" id="logoutNav"><a>Logout</a></li>
       </ul> 

@@ -10,17 +10,19 @@ body{
     height: 700px;
     background-color: rgb(26, 24, 36);
     background-image: url(images/Fondo.png);
+    background-size: 50%;
 }
 
 /*Primera página LOGIN*/
 
 .portada{
     display:block;
-    height: 130px;
-    width: 450px;
+    height: 120px;
+    width: 400px;
     margin: 0 auto;
     margin-top: 20px;
     justify-content: center;
+    max-width: 400px;
 }
 
 #formLogin{
@@ -221,7 +223,7 @@ body{
     margin-top: 100px;
 }
 
-#btnConfirmarRecuperacion{
+#btnConfirmarRecover{
     margin-right: 20px;
     margin-top: 10px;
     font-family: 'Ubuntu', sans-serif;
@@ -235,7 +237,7 @@ body{
     border: none;
 }
 
-#btnConfirmarRecuperacion:hover {
+#btnConfirmarRecover:hover {
     opacity: 0.6;
 }
 
@@ -270,7 +272,7 @@ body{
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     width: 100vw;
-    max-width: 480px;
+    max-width: 380px;
     height: 100px;
     font-size: 15px;
     font-weight: bold;
@@ -312,6 +314,7 @@ body{
     border-radius: 15px; 
     opacity: 80%;    
     margin-left: 10px;
+    margin-right: 30px;
     border: none;
 }
 
@@ -387,7 +390,7 @@ margin: 2px;
 .dropdown {
     position: absolute;
     top: 15px;
-    right: 20%;
+    right: 5%;
 }  
 
 .dropdown-content {
@@ -426,11 +429,48 @@ margin: 2px;
 #textoAboutUs { 
     margin-top: 50px;
     text-align: center;
-    width: 500px;
+    width: 380px;
     color: #ffffff;
 }
 
-.nosotras {
-    margin-top: 100px;
+.ordenNosotras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotras{
+    margin-top: 50px;
     height: 130px;
+    max-height: 100px;
+}
+
+/* Muro Astrología */
+
+#portadaAstro{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 350px;
+    height: 100px;
+    margin-bottom: -30px;
+}
+
+#astro{
+    display:block;
+    height: 100px;
+    width: 380px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.headerMuroAstro{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 380px;
+    font-size: 18px;
+    color: white;
 }

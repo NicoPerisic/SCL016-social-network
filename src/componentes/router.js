@@ -2,7 +2,8 @@ import { muro } from '../templates/templatemuro.js';
 import { login } from '../templates/templatelogin.js';
 import { register } from '../templates/templateregister.js';
 import { aboutUs } from '../templates/templateabout-us.js';
-import { restablecimiento } from '../templates/templaterestablecimiento.js';
+import { recover } from '../templates/templaterecover.js';
+import { muroAstrología } from '../templates/templatemuroastrologia.js';
 
 const showTemplate = (hash) => {
   const containerRoot = document.getElementById('root');
@@ -18,11 +19,14 @@ const showTemplate = (hash) => {
     case '#/register':
       containerRoot.appendChild(register());
       break;
-    case '#/restablecimiento':
-      containerRoot.appendChild(restablecimiento());
+    case '#/recover':
+      containerRoot.appendChild(recover());
       break;
     case '#/muro':
       containerRoot.appendChild(muro());
+      break;
+    case '#/astrologia':
+      containerRoot.appendChild(muroAstrología());
       break;
     case '#/nosotras':
       containerRoot.appendChild(aboutUs());
@@ -38,9 +42,11 @@ export const showRoute = (hash) => {
     return showTemplate(hash);
   } if (hash === '#/register') {
     return showTemplate(hash);
-  } if (hash === '#/restablecimiento') {
+  } if (hash === '#/recover') {
     return showTemplate(hash);
   } if (hash === '#/muro') {
+    return showTemplate(hash);
+  } if (hash === '#/astrologia') {
     return showTemplate(hash);
   } if (hash === '#/nosotras') {
     return showTemplate(hash);
