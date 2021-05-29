@@ -270,16 +270,17 @@ body{
 
 .inputPost{
     text-align: center;
+    padding: 30px;
     font-family: 'Ubuntu', sans-serif;
     width: 100vw;
-    max-width: 380px;
-    height: 100px;
+    max-width: 350px;
     font-size: 15px;
     font-weight: bold;
     background: #ffffff;
     border-radius: 30px; 
     opacity: 80%;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     border: none;
 }
 
@@ -288,19 +289,19 @@ body{
     justify-content: flex-end;
 }
 
-#btnLike {
+.btnCrud {
     font-family: 'Ubuntu', sans-serif;
-    width: 100px;
-    height: 40px;
+    width: 70px;
+    height: 30px;
     font-size: 12px;
     font-weight: bold;
     background: #ffffff;
-    border-radius: 15px;
+    border-radius: 10px;
     opacity: 80%;
     border: none;
 }
 
-#btnLike:hover {
+.btnCrud:hover {
     opacity: 0.6;
 }
 
@@ -313,8 +314,7 @@ body{
     background: #ffffff;
     border-radius: 15px; 
     opacity: 80%;    
-    margin-left: 10px;
-    margin-right: 30px;
+    margin-right: 20px;
     border: none;
 }
 
@@ -322,6 +322,9 @@ body{
     opacity: 0.6;
 }
 
+#edit{
+    margin-left: 170px;
+}
 
 /*Barra de Navegación*/
 
@@ -347,7 +350,6 @@ margin: 2px;
 .iconMenu{
     width: 20px; 
 }
-
 
 
 .dropbtn {

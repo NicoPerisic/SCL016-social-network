@@ -1,42 +1,40 @@
 // Funciones de Firestore
 
 // BORRAR INFORMACIÓN DEL CONTAINER
-const clean = () => {
-  const addPost = document.getElementById('post-container');
+const clean = (divMuroContainer) => {
+  const addPost = divMuroContainer.querySelector('#post-container');
   addPost.innerHTML = '';
 };
 
 // CREAR PUBLICACIÓN
-const createPublication = () => {
-  const formMuro = document.getElementById('formMuro'); // Formulario
+const createPublication = (divMuroContainer) => {
+  // Envia la data a firebase
+  const formMuro = divMuroContainer.querySelector('#formMuro'); // Formulario
   const post = formMuro.post.value; // Placerholder - Template Muro
-
   db.collection('murogeneral').doc().set({
     post,
     likes: 0,
-    users,
   });
-  clean();
+  clean(divMuroContainer);
+};
 
-  // TRAER DATOS
-  db.collection('murogeneral').get().then((snapshot) => {
-    snapshot.docs.forEach((doc) => {
-      const data = doc.data();
-      data.id = doc.id;
+const crudFunction = (doc) => {
+  const data = doc.data();
+  data.id = doc.id;
 
-      // HTML TEMPLATE - ADD POST
-      const addPost = document.getElementById('post-container');
-      addPost.innerHTML = /* html */ `
-    <div class="inputPost">${data.post}</div>
-    <button type="button" id="edit" data-id="${data.id}">Editar</button>
-    <button type="button" id="btnD1elete" data-id="${data.id}">Eliminar</button>
-    `;
-    });
-  });
+  // HTML TEMPLATE - ADD POST
+  const addPost = document.getElementById('post-container');
+  addPost.innerHTML = /* html */ `
+  <div class="inputPost" id="postText" >${data.post}</div>
+  <button type="button" class="btnCrud" id="edit" data-id="${data.id}">Editar</button>
+  <button type="button" class="btnCrud" id="btnD1elete" data-id="${data.id}">Eliminar</button>
+  <button type="submit" class="btnCrud" id="btnLike">Like</button> 
+  `;
 
   // DELETE POST
-  const deleteAll = document.querySelectorAll('#btnDelete');
-  for (let i = 0; i < deleteAll.length; i++) {
+  const deleteAll = document.querySelector('#btnDelete');
+
+  for (let i = 0; i < deleteAll.lenght; i++) {
     const deleteSingle = deleteAll[i];
     deleteSingle.addEventListener('click', (e) => {
       db.collection('murogeneral').doc(e.target.dataset.id).delete().then(() => {
@@ -47,28 +45,31 @@ const createPublication = () => {
         });
     });
   }
-
   // EDIT POST
   const btnEdit = document.getElementById('edit');
   for (let i = 0; i < btnEdit.length; i++) {
     const btnSingle = btnEdit[i];
     btnSingle.addEventListener('click', (e) => {
-      const formMuro = document.getElementById('formMuro');
       formMuro.post.value = db.collection('murogeneral').doc((e.target.dataset.id)).delete();
     });
   }
 };
 
+// TRAER DATOS
+db.collection('murogeneral').get().then((snapshot) => {
+  snapshot.docs.forEach((doc) => {
+    crudFunction(doc);
+  });
+});
+
 // Controlador post muro
-const handlerPost = () => {
-  const btnPublicar = document.getElementById('btnPublicar');
+export const handlerPost = (divMuroContainer) => {
+  const btnPublicar = divMuroContainer.querySelector('#btnPublicar');
   btnPublicar.addEventListener('click', (e) => {
     e.preventDefault();
-    const formMuro = document.getElementById('formMuro');
-    createPublication();
+    const formMuro = divMuroContainer.querySelector('#formMuro');
+    createPublication(divMuroContainer);
     formMuro.reset();
   });
-  clean();
+  clean(divMuroContainer);
 };
-
-export default handlerPost;

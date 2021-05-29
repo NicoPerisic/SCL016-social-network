@@ -1,5 +1,6 @@
 import { nav } from '../componentes/nav.js';
 import { footerMuro } from '../componentes/footerMuro.js';
+import { handlerPost } from '../componentes/firebase.js';
 
 export const muro = () => {
   const divMuroContainer = document.createElement('div');
@@ -11,10 +12,10 @@ export const muro = () => {
         <form id="formMuro"> 
           <label for="post"></label><br><input placeholder="¿Qué nos contarás hoy ;)?" type="text" id="post" class="inputPost" name="post"><br>
           <div class="btnsMuro">
-          <button type="submit" id="btnLike">Like</button> 
           <button type="submit" id="btnPublicar">Publicar</button>
           </div>
         </form>
+        <div id="post-container"></div>
         <div class="centrarRedesOne">
     </div>`;
 
@@ -22,7 +23,7 @@ export const muro = () => {
 
   divMuroContainer.appendChild(nav());
   divMuroContainer.appendChild(footerMuro());
-
+  (handlerPost(divMuroContainer));
 
   return divMuroContainer;
 };
