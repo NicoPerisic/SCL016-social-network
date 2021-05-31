@@ -7,7 +7,7 @@
 ![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Página2.jpg)
 ![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Pagina4.jpg)
 
-# Opiniones destacadas ✍
+# Comentarios destacados ✍
 
 ![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Pagina3.jpg)
 
