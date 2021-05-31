@@ -21,7 +21,7 @@ _Se desarrollo la idea principal en papel y luego en Figma para poder maquetear 
 
 ![Boceto en papel](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/BajaFidelidad.jpg)
 
-_Posibles pantallas de trabajo dentro de nuestra red Social. Se trabajo desde un router que redirige una vez autorizado el Login.
+_Posibles pantallas de trabajo dentro de nuestra red Social. Se trabajo desde un router que redirige una vez autorizado el Login._
 
 ![Figma protótipo Pantallas 1](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Figma.jpg)
 
