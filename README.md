@@ -16,15 +16,14 @@
 
 _Se desarrollo la idea principal en papel y luego en Figma para poder maquetear la base de nuestro proyecto._
 
-![Boceto en papel](https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/prototipo.png)
+![Boceto en papel]https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/BajaFidelidad.jpg)
 
-_Posibles pantallas de trabajo dentro de nuestra Pokédex. Bajo un orden general todas las rutas nacen desde HOME para llegar a las pestañas superiores con información adicional, a la búsqueda particular por Pokémon o a la data general donde poder filtrar.
+_Posibles pantallas de trabajo dentro de nuestra red Social. Se trabajo desde un router que redirige una vez autorizado el Login.
 
-![Figma protótipo Pantallas 1](https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/Figma1.png)
+![Figma protótipo Pantallas 1](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Figma.jpg)
 
-![Figma protótipo Pantallas 2](https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/Figma2.png)
 
-<div align="center">Link de Figma: https://www.figma.com/file/zqLbaPrtNhidqb9XIoIGkQ/DATA-LOVERS-3?node-id=0%3A1</div>
+<div align="center">Link de Figma: https://www.figma.com/file/uACJC5F0eNF4hUM0DY0kOk/Aquelarre-Laboratoria-team-library?node-id=0%3A1</div>
 
 ### Cambios en la interfaz 🖐
 
