@@ -5,16 +5,12 @@
 
 ![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Página1.jpg)
 ![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Página2.jpg)
-![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Pagina3.jpg)
 ![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Pagina4.jpg)
 
 # Opiniones destacadas ✍
-<ol>
-<li>-Basar la interfaz en el diseño de la Pokedex para mantener la experiencia dentro del juego.</li>
-<li>-Que el interfaz sea completo, todo se muestre dentro de la misma página sin tener que estar navegando de manera exhaustiva. </li>
-<li>-Habilitar un modo de experiencia online que se actualice a tiempo real como "Eventos".</li>
-<li>-Que se mantenga la estética dentro de todo el concepto y no sólo en la portada, manteniendo una gama de colores. </li>
-</ol>
+
+![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Pagina3.jpg)
+
 
 ## Pruebas iniciales 🙌
 
