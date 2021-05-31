@@ -1,7 +1,10 @@
 # Social Network - AQUELARRE ✨
 
+_El proyecto surgió de una conversación en la que compartimos nuestros signos zodiacales y nos sorprendió como esto nos representaban ante las demás. Creímos que era una buena base sobre la cual trabajar y nos decidimos a investigar más. Preguntamos, hicimos encuestas y probamos ideas relacionadas. Finalmente, nos hicieron ver que les interesaba saber sus signos zodiacales y conocer más personas a través de sus signos y otros aspectos astrológicos afín._
 
-...
+_Usuarios:Personas desde los 18 años interesados en la astrología._
+
+_Diseño:Nos basamos en una temática espacial, colores azules oscuros, estrellas y constelaciones claras con blanco y dibujos de los signos._
 
 ![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Página1.jpg)
 ![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Página2.jpg)
@@ -16,9 +19,9 @@
 
 _Se desarrollo la idea principal en papel y luego en Figma para poder maquetear la base de nuestro proyecto._
 
-![Boceto en papel]https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/BajaFidelidad.jpg)
+![Boceto en papel](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/BajaFidelidad.jpg)
 
-_Posibles pantallas de trabajo dentro de nuestra red Social. Se trabajo desde un router que redirige una vez autorizado el Login.
+_Posibles pantallas de trabajo dentro de nuestra red Social. Se trabajo desde un router que redirige una vez autorizado el Login._
 
 ![Figma protótipo Pantallas 1](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Figma.jpg)
 
@@ -27,7 +30,7 @@ _Posibles pantallas de trabajo dentro de nuestra red Social. Se trabajo desde un
 
 ### Cambios en la interfaz 🖐
 
-_Para facilitar la experiencia del se agregaron algunos elementos visuales respetando el diseño de Figma inicial lo máximo posible. Al ser una página para distintos tipos de usuario se busca que sea intuitiva._
+_Para facilitar la navegación del usuario se implemento una barra de Navegación en la parte laterla derecha._
 
 <p align="center"><img src="https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/Pikachu1.png"></p>
 
@@ -35,25 +38,7 @@ _Implementación de Slider y Scroll para los contenedores de información. Se bu
 
 <p align="center"><img src="https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/Pikachu2.png"></p>
 
-## Cambios en el código HTML ⚙️
 
-_Se trabajo toda la diagramación en HTML, aunque se puede encontrar adjunta la Página HOME trabajada en Javascript a modo de práctica._
-_Hay jerarquía de contenedores para poder diagramar sobre las imágenes base. Contenedor de imagen de fondo general, contenedor de imagen de la Pokédex y contenedor del orden interno de los elementos de la Pokedex. Esto con el fin de poder desplazar los elementos en la página con total comodidad._
- 
-<p align="center"><img src="https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/codigo.png"></p>
- 
-
-## Uso de JavaScript 🔐
-
-_Lo primero que se trabajo en JS fue la vinculación de las páginas a través de apagar y encender secciones del código._
-
-<p align="center"><img src="https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/cambiopagina.png"></p>
-
-_En el documento Data podemos encontrar las funciones que ayudan a filtrar nuestra data principal, las cuales luego exportamos a Main._
-
-<p align="center"><img src="https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/funcion.png"></p>
-
-<p align="center"><img src="https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/displayfuncion.png"></p>
 
 
 ## Trabajo final y observaciones ✨💖
