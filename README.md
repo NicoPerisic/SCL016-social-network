@@ -1,10 +1,8 @@
 # Social Network - AQUELARRE ✨
 
-El proyecto surgió de una conversación en la que compartimos nuestros signos zodiacales y nos sorprendió como esto nos representaban ante las demás. Creímos que era una buena base sobre la cual trabajar y nos decidimos a investigar más. Preguntamos, hicimos encuestas y probamos ideas relacionadas. Finalmente, nos hicieron ver que les interesaba saber sus signos zodiacales y conocer más personas a través de sus signos y otros aspectos astrológicos afín.
-Usuarios:
-Personas desde los 18 años interesados en la astrología.
-Diseño:
-Nos basamos en una temática espacial, colores azules oscuros, estrellas y constelaciones claras con blanco y dibujos de los signos.
+_El proyecto surgió de una conversación en la que compartimos nuestros signos zodiacales y nos sorprendió como esto nos representaban ante las demás. Creímos que era una buena base sobre la cual trabajar y nos decidimos a investigar más. Preguntamos, hicimos encuestas y probamos ideas relacionadas. Finalmente, nos hicieron ver que les interesaba saber sus signos zodiacales y conocer más personas a través de sus signos y otros aspectos astrológicos afín._
+_Usuarios:Personas desde los 18 años interesados en la astrología._
+_Diseño:Nos basamos en una temática espacial, colores azules oscuros, estrellas y constelaciones claras con blanco y dibujos de los signos._
 
 ![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Página1.jpg)
 ![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Página2.jpg)
