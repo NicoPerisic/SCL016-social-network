@@ -19,7 +19,7 @@ _Diseño:Nos basamos en una temática espacial, colores azules oscuros, estrella
 
 _Se desarrollo la idea principal en papel y luego en Figma para poder maquetear la base de nuestro proyecto._
 
-![Boceto en papel]https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/BajaFidelidad.jpg)
+![Boceto en papel](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/BajaFidelidad.jpg)
 
 _Posibles pantallas de trabajo dentro de nuestra red Social. Se trabajo desde un router que redirige una vez autorizado el Login.
 
