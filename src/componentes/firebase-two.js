@@ -2,9 +2,7 @@ const db = firebase.firestore();
 
 // CREAR PUBLICACIÓN
 
-const createPublication = () => {
-  const post = document.getElementById('post-placeholder').value;
-
+export const handlerPost = (post) => {
   db.collection('murogeneral').add({
     post,
     likes: 0,
@@ -17,6 +15,16 @@ const createPublication = () => {
       console.error('Error adding document: ', error);
     });
 };
+
+// TRAER DATOS
+
+db.collection('murogeneral').onSnapshot((querySnapshot) => {
+  querySnapshot.forEach((doc) => {
+    const traerVacio = document.querySelectorAll('#post-container');
+    traerVacio.innertHTML = '';
+    crudFunction(doc);
+  });
+});
 
 const deleteMessage = (del) => {
   const deleteFirestore = (id) => db.collection('murogeneral').doc(id).delete();
@@ -44,30 +52,4 @@ const crudFunction = (doc) => {
       deleteMessage(e.target.dataset.id);
     });
   }
-};
-
-// TRAER DATOS
-
-db.collection('murogeneral').onSnapshot((querySnapshot) => {
-  querySnapshot.forEach((doc) => {
-    crudFunction(doc);
-  });
-});
-
-/*
-const btnEdit = document.querySelectorAll('#edit');
-for (let i = 0; i < btnEdit.length; i++) {
-  const editSingle = btnEdit[i];
-  editSingle.addEventListener('click', (e) => {
-    const postContainer = document.querySelector('#post-container');
-    postContainer['post-placeholder'].value = db.collection('murogeneral').doc((e.target.dataset.id)).delete();
-  });
-} */
-
-export const handlerPost = (divMuroContainer) => {
-  const btnPublicar = divMuroContainer.querySelector('#btnPublicar');
-  btnPublicar.addEventListener('click', (e) => {
-    e.preventDefault();
-    createPublication();
-  });
 };
