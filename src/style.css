@@ -269,11 +269,14 @@ body{
 }
 
 .inputPost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 30px;
     font-family: 'Ubuntu', sans-serif;
     width: 100vw;
-    max-width: 350px;
+    max-width: 330px;
     font-size: 15px;
     font-weight: bold;
     background: #ffffff;
@@ -308,14 +311,15 @@ body{
 #btnPublicar {
     font-family: 'Ubuntu', sans-serif;
     width: 100px;
-    height: 40px;
+    height: 35px;
     font-size: 12px;
     font-weight: bold;
     background: #ffffff;
-    border-radius: 15px; 
+    border-radius: 10px; 
     opacity: 80%;    
-    margin-right: 20px;
+    margin-right: 30px;
     border: none;
+    margin-top: -20px;
 }
 
 #btnPublicar:hover {
@@ -326,6 +330,36 @@ body{
     margin-left: 170px;
 }
 
+#contenedorPost{
+    width: 420px;
+    height: 300px;
+}
+  
+.scroll{
+    overflow-y: scroll;
+  }
+  
+  .scroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  
+  .scroll::-webkit-scrollbar:vertical {
+    width:8px;
+  }
+  
+  .scroll::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+  } 
+  
+  .scroll::-webkit-scrollbar-thumb {
+    background-color: #777c77a4;
+    border-radius: 20px;
+  }
+  
+  .scroll::-webkit-scrollbar-track {
+    border-radius: 10px;  
+  }
+  
 /*Barra de Navegación*/
 
 li{

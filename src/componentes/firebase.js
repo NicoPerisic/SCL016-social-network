@@ -56,13 +56,14 @@ const crudFunction = (doc) => {
 };
 
 // TRAER DATOS
-db.collection('murogeneral').get().then((snapshot) => {
-  snapshot.docs.forEach((doc) => {
-    crudFunction(doc);
+db.collection('murogeneral').get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      crudFunction(doc);
+    })
   });
-});
 
-// Controlador post muro
+
+// CONTROLADOR 
 export const handlerPost = (divMuroContainer) => {
   const btnPublicar = divMuroContainer.querySelector('#btnPublicar');
   btnPublicar.addEventListener('click', (e) => {
