@@ -14,6 +14,10 @@ _Diseño:Nos basamos en una temática espacial, colores azules oscuros, estrella
 
 ![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Pagina3.jpg)
 
+# Historias de Usuario 👀
+
+![Historia_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Pagina5.jpg)
+
 
 ## Protótipo de baja fidelidad 🙌
 
