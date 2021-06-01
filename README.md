@@ -43,7 +43,7 @@ _Diseño final del proyecto. En aspectos generales, es una copia casi fiel de nu
 
 _Flujo de páginas iniciales. Home, Registro y Recuperación de contraseña._ 
 
-<p align="center"><img src="https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/rutaUno.png"></p>
+<p align="center"><img src="https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/PantallasPrincipales.png"></p>
 
 _Pantallas secundarias._ 
 
