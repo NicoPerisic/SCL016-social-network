@@ -45,9 +45,9 @@ _Flujo de páginas iniciales. Home, Registro y Recuperación de contraseña._
 
 <p align="center"><img src="https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/rutaUno.png"></p>
 
-_Pantallas secundarias de información para que los usuarios puedan sacar el máximo provecho de la plataforma._ 
+_Pantallas secundarias._ 
 
-<p align="center"><img src="https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/rutaUno.png"></p>
+<p align="center"><img src=""></p>
 
 
 ## Gracias por haber llegado hasta aquí <3 :)
