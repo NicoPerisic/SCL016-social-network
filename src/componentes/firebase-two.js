@@ -2,28 +2,9 @@ const db = firebase.firestore();
 
 // CREAR PUBLICACIÓN
 
-export const handlerPost = (post) => {
-  db.collection('murogeneral').add({
-    post,
-    likes: 0,
-  })
-    .then((docRef) => {
-      console.log('Document written with ID: ', docRef.id);
-      document.getElementById('post-placeholder').value = '';
-    })
-    .catch((error) => {
-      console.error('Error adding document: ', error);
-    });
-};
-
-// TRAER DATOS
-
-db.collection('murogeneral').onSnapshot((querySnapshot) => {
-  querySnapshot.forEach((doc) => {
-    const traerVacio = document.querySelectorAll('#post-container');
-    traerVacio.innertHTML = '';
-    crudFunction(doc);
-  });
+export const handlerPost = (post) => db.collection('murogeneral').add({
+  post,
+  likes: 0,
 });
 
 const deleteMessage = (del) => {
@@ -52,4 +33,15 @@ const crudFunction = (doc) => {
       deleteMessage(e.target.dataset.id);
     });
   }
+};
+
+// TRAER DATOS
+
+export const traerDatos = () => {
+  db.collection('murogeneral').onSnapshot((querySnapshot) => {
+    console.log(querySnapshot.docChanges().length);
+    querySnapshot.forEach((doc) => {
+      crudFunction(doc);
+    });
+  });
 };

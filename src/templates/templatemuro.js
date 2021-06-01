@@ -1,6 +1,6 @@
 import { nav } from '../componentes/nav.js';
 import { footerMuro } from '../componentes/footerMuro.js';
-import { handlerPost } from '../componentes/firebase-two.js';
+import { handlerPost, traerDatos } from '../componentes/firebase-two.js';
 
 export const muro = () => {
   const divMuroContainer = document.createElement('div');
@@ -28,9 +28,17 @@ export const muro = () => {
   const btnPublicar = divMuroContainer.querySelector('#btnPublicar');
   btnPublicar.addEventListener('click', () => {
     const post = divMuroContainer.querySelector('#post-placeholder').value;
-    console.log('login OK google');
-    handlerPost(post);
+    console.log('publicado correctamente');
+    handlerPost(post).then((docRef) => {
+      console.log('Document written with ID: ', docRef.id);
+      document.getElementById('post-placeholder').value = '';
+    })
+      .catch((error) => {
+        console.error('Error adding document: ', error);
+      });
   });
+
+  traerDatos();
 
   return divMuroContainer;
 };
