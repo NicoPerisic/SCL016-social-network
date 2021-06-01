@@ -15,7 +15,7 @@ _Diseño:Nos basamos en una temática espacial, colores azules oscuros, estrella
 ![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Pagina3.jpg)
 
 
-## Pruebas iniciales 🙌
+## Protótipo de baja fidelidad 🙌
 
 _Se desarrollo la idea principal en papel y luego en Figma para poder maquetear la base de nuestro proyecto._
 
@@ -32,7 +32,8 @@ _Posibles pantallas de trabajo dentro de nuestra red Social. Se trabajo desde un
 
 _Para facilitar la navegación del usuario se implemento una barra de Navegación en la parte laterla derecha._
 
-<p align="center"><img src="https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/Pikachu1.png"></p>
+<p align="center"><img src="https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/BarraNav.jpg"></p>
+<p align="center"><img src="https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/CódigoNav.png"></p>
 
 _Implementación de Slider y Scroll para los contenedores de información. Se busca que la página sea más interactiva a través de cambio de página. También se implementa un botón de "back" utilizando la misma imagen de la Pokedex contenedora para hacerla más funcional._
 
