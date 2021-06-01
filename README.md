@@ -15,7 +15,7 @@ _Diseño:Nos basamos en una temática espacial, colores azules oscuros, estrella
 ![Encuesta_](https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/Pagina3.jpg)
 
 
-## Pruebas iniciales 🙌
+## Protótipo de baja fidelidad 🙌
 
 _Se desarrollo la idea principal en papel y luego en Figma para poder maquetear la base de nuestro proyecto._
 
@@ -32,26 +32,22 @@ _Posibles pantallas de trabajo dentro de nuestra red Social. Se trabajo desde un
 
 _Para facilitar la navegación del usuario se implemento una barra de Navegación en la parte laterla derecha._
 
-<p align="center"><img src="https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/Pikachu1.png"></p>
-
-_Implementación de Slider y Scroll para los contenedores de información. Se busca que la página sea más interactiva a través de cambio de página. También se implementa un botón de "back" utilizando la misma imagen de la Pokedex contenedora para hacerla más funcional._
-
-<p align="center"><img src="https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/Pikachu2.png"></p>
-
+<p align="center"><img src="https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/BarraNav.jpg"></p>
+<p align="center"><img src="https://github.com/NicoPerisic/SCL016-social-network/blob/master/src/images/CódigoNav.png"></p>
 
 
 
 ## Trabajo final y observaciones ✨💖
 
-_Diseño final del proyecto. En aspectos generales, es una copia casi fiel de nuestro protótipo de Figma. No pudimos habilitar la ventana de búsqueda por nombre y/o número debido a la dificultad de diagramación que tenía el proyecto, pero estamos conformes con las demás funcionalidades. Tenemos 5 tipos de filtro dentro de nuestra data general. También tenemos 3 pestañas de información adicional las cuales cumplen con nuestra necesidad de informar y mantener el proyecto "actualizado"._
+_Diseño final del proyecto. En aspectos generales, es una copia casi fiel de nuestro protótipo de Figma. Quedó pendiente el proceso de incorporación del Muro de Astrología y la sección de horóscopo, pero dentro de todos los objetivos, quedamos conformes con el trabajo visual que logramos implementar a través de la creación de views y código dinámico._
 
-_Diágrama de flujo principal desde HOME a la DataDex general. Las fichas que contienen la información básica del Pokémon se voltean al contacto, dejando así a la vista la información adicional del mismo._ 
-
-<p align="center"><img src="https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/rutaUno.png"></p>
-
-_Pantallas secundarias de información para que los usuarios puedan sacar el máximo provecho de la plataforma._ 
+_Flujo de páginas iniciales. Home, Registro y Recuperación de contraseña._ 
 
 <p align="center"><img src="https://github.com/tanimikyu/Data-Lovers--Pokemon/blob/master/src/images/rutaUno.png"></p>
+
+_Pantallas secundarias._ 
+
+<p align="center"><img src=""></p>
 
 
 ## Gracias por haber llegado hasta aquí <3 :)
