@@ -1,6 +1,6 @@
 import { nav } from '../componentes/nav.js';
 import { footerMuro } from '../componentes/footerMuro.js';
-import { handlerPost, traerDatos } from '../componentes/firebase-two.js';
+import { handlerPost, traerDatos } from '../componentes/firebase.js';
 
 export const muro = () => {
   const divMuroContainer = document.createElement('div');
@@ -28,7 +28,7 @@ export const muro = () => {
   const btnPublicar = divMuroContainer.querySelector('#btnPublicar');
   btnPublicar.addEventListener('click', () => {
     const post = divMuroContainer.querySelector('#post-placeholder').value;
-    console.log('publicado correctamente');
+    console.log('Publicado Correctamente >:)');
     handlerPost(post).then((docRef) => {
       console.log('Document written with ID: ', docRef.id);
       document.getElementById('post-placeholder').value = '';

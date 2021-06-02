@@ -1,5 +1,6 @@
+// CONTROLADORES LOGIN
+
 // Registro con correo
-// Handler = controlador
 
 const handlerRegister = (e) => {
   e.preventDefault();

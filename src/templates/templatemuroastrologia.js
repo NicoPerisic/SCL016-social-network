@@ -6,7 +6,6 @@ export const muroAstrología = () => {
   const viewMuroAstro = /* html */ `
     <div id="contenedorMuroAstro">
     <img id="portadaAstro" src="images/logo.png" />
-    <img id="astro" src="images/astro.png" />
       <div class="headerMuroAstro">¿Quieres hacer una consulta o compartir alguna información sobre Astrología? ¡Hazlo aquí! </div>
       <div class="inviteMuro"></div>
         <form id="formRegistro"> 
