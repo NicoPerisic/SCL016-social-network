@@ -21,7 +21,6 @@ export const register = () => {
 
   const confirmarTwo = divRegisterContainer.querySelector('#btnConfirmar');
   confirmarTwo.addEventListener('click', (e) => {
-    console.log('registro OK');
     handlerRegister(e);
   });
 

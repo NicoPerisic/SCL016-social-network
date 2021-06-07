@@ -9,8 +9,7 @@ const handlerRegister = (e) => {
   const signupPassword = document.getElementById('password').value;
 
   firebase.auth().createUserWithEmailAndPassword(signupEmail, signupPassword)
-    .then((data) => {
-      console.log(data);
+    .then(() => {
       alert('Registro Exitoso');
     }, (error) => {
       console.error(error);
@@ -25,9 +24,11 @@ const handlerLogin = (e) => {
 
   const emailHome = document.getElementById('emailHome').value;
   const passwordHome = document.getElementById('passwordHome').value;
+
   firebase.auth().signInWithEmailAndPassword(emailHome, passwordHome)
     .then(() => {
       // Signed in
+      console.log('login OK');
       window.location.href = '/#/muro';
     }, (error) => {
       console.error(error);
@@ -80,7 +81,6 @@ const recoverPass = (e) => {
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     console.log(user);
-    window.location.href = '/#/muro';
   } else {
     console.log('no existe');
     window.location.href = '/#/login';

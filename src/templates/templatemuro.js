@@ -25,6 +25,7 @@ export const muro = () => {
   divMuroContainer.appendChild(nav());
   divMuroContainer.appendChild(footerMuro());
 
+  // BOTÓN PUBLICAR
   const btnPublicar = divMuroContainer.querySelector('#btnPublicar');
   btnPublicar.addEventListener('click', () => {
     const post = divMuroContainer.querySelector('#post-placeholder').value;

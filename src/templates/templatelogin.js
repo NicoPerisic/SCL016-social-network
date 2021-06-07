@@ -26,7 +26,6 @@ export const login = () => {
 
   const loginTwo = divLoginContainer.querySelector('#btnLogin');
   loginTwo.addEventListener('click', (e) => {
-    console.log('login OK');
     handlerLogin(e);
   });
 

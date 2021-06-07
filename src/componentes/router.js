@@ -4,6 +4,7 @@ import { register } from '../templates/templateregister.js';
 import { aboutUs } from '../templates/templateabout-us.js';
 import { recover } from '../templates/templaterecover.js';
 import { muroAstrología } from '../templates/templatemuroastrologia.js';
+import { perfil } from '../templates/templateperfil.js';
 
 const showTemplate = (hash) => {
   const containerRoot = document.getElementById('root');
@@ -28,6 +29,9 @@ const showTemplate = (hash) => {
     case '#/astrologia':
       containerRoot.appendChild(muroAstrología());
       break;
+    case '#/perfil':
+      containerRoot.appendChild(perfil());
+      break;
     case '#/nosotras':
       containerRoot.appendChild(aboutUs());
       break;
@@ -45,6 +49,8 @@ export const showRoute = (hash) => {
   } if (hash === '#/recover') {
     return showTemplate(hash);
   } if (hash === '#/muro') {
+    return showTemplate(hash);
+  } if (hash === '#/perfil') {
     return showTemplate(hash);
   } if (hash === '#/astrologia') {
     return showTemplate(hash);

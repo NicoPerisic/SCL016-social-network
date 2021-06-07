@@ -1,12 +1,12 @@
 const db = firebase.firestore();
 
 // CREAR PUBLICACIÓN - handlerPost se ejecuta en Muro
+
 export const handlerPost = (post) => db.collection('murogeneral').add({
   post,
-  likes: 0,
 });
 
-// FUNCIÓN DELETE, se ejecuta dentro de Traer Datos
+// FUNCIÓN DELETE - Se ejecuta dentro de Traer Datos
 
 const deletePost = (borrar) => {
   const deleteFirestore = (id) => db.collection('murogeneral').doc(id).delete();
@@ -24,9 +24,11 @@ export const traerDatos = () => {
       const data = doc.data();
       data.id = doc.id;
       addPost.innerHTML += /* html */ `
-        <div class="inputPost" id="postText" >${doc.data().post}</div>
+        <div class="inputPost" id="postText">${doc.data().post}</div>
         <button type="button" class="btnCrud" id="btnEdit" data-id='${data.id}'>Editar</button>
         <button type="button" class="btnCrud" id="btnDelete" data-id='${data.id}'>Eliminar</button>
+        <div id="textChange"></div>
+        <div id="newText" class="newText"></div>      
     `;
 
       const btnDelete = document.querySelectorAll('#btnDelete');

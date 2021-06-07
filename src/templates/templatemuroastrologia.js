@@ -11,7 +11,6 @@ export const muroAstrología = () => {
         <form id="formRegistro"> 
           <label for="post"></label><br><input placeholder="¿Qué nos contarás hoy ;)?" type="text" id="createPost" class="inputPost" name="post"><br> 
           <div class="btnsMuro">
-          <button type="submit" id="btnLike">Like</button> 
           <button type="submit" id="btnPublicar">Publicar</button> 
           </div>
         </form>
